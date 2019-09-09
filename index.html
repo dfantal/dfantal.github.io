@@ -14,7 +14,7 @@
 	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cooper Mountain Ale Works</title>
+	<title>Dan & Miriam's Wedding</title>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -36,14 +36,14 @@
 
 		<div class="hero">
 
-			<a class="logo" title="Cooper Mountain Ale Works" href="http://coopermountainaleworks.com"><span>Cooper Mountain Ale Works</span></a>
+			<a class="logo" title="Cooper Mountain Ale Works" href="http://coopermountainaleworks.com"><span>Dan & Miriam</span></a>
 
 		</div>
 
 	</header>
 
 	<section class="motto">
-		<h1>Discover the beer<br> you didn't know you love</h1>
+		<h1>The Best Wedding <br />You'll Be at on December 21st</h1>
 	</section>
 
 	<section class="main">
@@ -52,25 +52,25 @@
 
 		<aside>
 			<div class="content trending">
-				<i class="fa fa-flask fa-3x"></i>
-				<h3>Nerdy Roots</h3>
-				<p>Cooper Mountain Ale Works was founded by a small group of tech nerds who extended their penchant for code and chemistry to brewing delicious beer. Add a wine nerd with an accounting problem and we’ve got a team dedicated to making sure our friends and coworkers in SW Portland are never found wanting for a drink. </p>
+				<i class="fa fa-calendar fa-3x"></i>
+				<h3>December 21st, 2019</h3>
+				<p>Info about start and end times...</p>
 			</div>
 		</aside>
 
 		<aside>
 			<div class="content find-it">
-				<i class="fa fa-star fa-3x"></i>
-				<h3>Lofty Goal</h3>
-				<p>Our mission is to create the beers you didn't even know you loved. From classic styles to new and never tried recipes, we brew it all.</p>
+				<i class="fa fa-map-marked fa-3x"></i>
+				<h3>Lucky Labrador Public House</h3>
+				<p>Info about location</p>
 			</div>
 		</aside>
 
 		<aside>
 			<div class="content tools">
-				<i class="fa fa-users fa-3x"></i>
-				<h3>Passionate Team</h3>
-				<p>Our team is producing and refining recipes for ales, stouts, porters, and more. Our brewery is located deep in the Silicon Forest in the Progress Ridge neighborhood of Beaverton, Oregon.</p>
+				<i class="fa fa-pizza-slice fa-3x"></i>
+				<h3>Much Grub</h3>
+				<p>Info about food and drinks</p>
 			</div>
 		</aside>
 
@@ -82,8 +82,11 @@
 		</article>
 
 		<article class="text">
-			<h2>Creating delicious beer in Beaverton, Oregon</h2>
-			<p>We're constantly trying out new recipes as well as fine tuning our tried and true flavors. From the bold Belgian Trippel, to the more mild ESB, we have a variety of styles to quench your thirst.</p>
+			<h2>Gifts</h2>
+			<p>If you'd like to send a gift to Dan & Miriam, there are a couple ways you can choose to do that.</p>
+			<p>Next year Dan & Miriam have some travel plans you can help them with - </p>
+			<p>Dan & Miriam have a lovely project home in Tigard. You can help them with remodelling projects as they continue working on building a home together - </p>
+			<p>If you would like to gift Dan & Miriam a more standard gift, they have a registry on Amazon - </p>
 		</article>
 
 	</section>
@@ -92,68 +95,8 @@
 
 	</section>
 
-	<section id="contact" class="contact">
-
-		<article>
-			<h2>Contact Us</h2>
-			<a href="mailto:Info@CooperMountainAleWorks.com"><i class="fa fa-fw fa-envelope fa-2x"></i> Info@CooperMountainAleWorks.com<br></a>
-			<a href="https://www.facebook.com/CooperMountainAleWorks/"><i class="fab fa-fw fa-facebook-square fa-2x"></i> CooperMountainAleWorks<br></a>
-		</article>
-
-	</section>
-
-	<footer>
-
-		&copy;Cooper Mountain Ale Works
-		<div class="content">
-			<a title="Privacy Policy" href="#">Privacy Policy</a>
-			<a title="Terms of Service" href="#">Terms of Service</a>
-		</div>
-
-	</footer>
 </div>
 </body>
 
-<script>
-	function loadBrews() {
-		var brews = JSON.parse(this.responseText);
-
-		for (var index in brews.brews) {
-			var brew = brews.brews[index];
-
-			var brewAside = document.createElement('aside');
-
-			var brewDiv = document.createElement('div');
-			brewDiv.classList.add('content');
-
-			var brewName = document.createElement('h4');
-			brewName.innerText = brew.name;
-			brewDiv.appendChild(brewName);
-
-			var style = document.createElement('h5');
-			style.innerText = brew.style;
-			brewDiv.appendChild(style);
-
-			var description = document.createElement('p');
-			description.innerText = brew.description;
-			brewDiv.appendChild(description);
-
-			var stats = document.createElement('code');
-			stats.innerText = 'ABV: ' + brew.abv + " | IBU: " + brew.ibu + ' | Available: ' + brew.season;
-			brewDiv.appendChild(stats);
-
-			brewAside.appendChild(brewDiv);
-			document.getElementById('brews').appendChild(brewAside);
-		}
-	}
-
-	function loadPage() {
-		var request = new XMLHttpRequest();
-		request.addEventListener('load', loadBrews);
-		request.open("GET", "/brews.json");
-		request.send();
-	}
-
-	loadPage();
-</script>
 </html>
+

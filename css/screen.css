@@ -1,0 +1,251 @@
+/* CSS Document for Screens */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Text */
+
+h1 {
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+h3 {
+    margin: 0 0 .5em 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+h4 {
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a {
+    color: #007eff;
+}
+
+a:visited {
+    color: #65b1ff;
+}
+
+a.btn {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 4px 15px;
+    transition: background-color .5s;
+}
+
+a.btn:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/* Header */
+
+header {
+    height: 430px;
+    background: #000 url(../images/banner.jpg) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+header a.logo {
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    background: url(../images/logo_inverted.png) no-repeat 0 0;
+    background-size: contain;
+    z-index: 1;
+    left: calc(50% - 215px);
+    top: 30px;
+}
+
+header a.logo span {
+    display: none;
+}
+
+header div.hero {
+    width: 100%;
+    top: 150px;
+    display: flex;
+    background: rgba(0,0,0,.75);
+}
+
+/* Section - All */
+
+section {
+    padding: 0 30px;
+}
+
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Section - Motto */
+
+section.motto {
+    text-align: center;
+}
+
+/* Section - Main */
+
+section.main {
+    margin: 20px 20px 30px 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.main aside {
+    flex-grow: 1;
+    width: 450px;
+    max-width: 450px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+
+/* Section - Atompshere */
+
+section.atmosphere {
+    background-color: #cc6633;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.atmosphere article.img {
+    background: url('../images/brewery.jpg') no-repeat;
+    background-size: contain;
+    max-width: 30%;
+    min-width: 600px;
+    height: 240px;
+    flex: 1;
+}
+
+section.atmosphere article {
+    flex: 2;
+    min-width: 400px;
+    width: calc(100% - 450px);
+}
+
+/** Section - How To */
+
+section.how-to {
+    background-color: #eee9d9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.how-to aside {
+    width: 450px;
+    max-width: 450px;
+    flex-grow: 1;
+}
+
+section.how-to aside .content {
+    padding: 30px 30px 20px 0;
+}
+
+section.how-to aside .content h4 {
+    margin-bottom: 0;
+}
+
+section.how-to aside .content p {
+    margin-bottom: .5em;
+}
+
+section.how-to aside .content a {
+    display: inline-block;
+    color: #cc6633;
+    font-weight: 700;
+}
+
+/* Section - Contact Us */
+
+section.contact {
+    background-color: #cc6633;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    display: flex;
+}
+
+section.contact > * {
+    flex-grow: 1;
+}
+
+section.contact article {
+    padding-left: 40px;
+}
+
+section.contact a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+section.contact a:visited {
+    color: #FFF;
+}
+
+/* Footer */
+
+footer {
+    font-size: .8em;
+    margin: 40px;
+    color: #999;
+}
+
+footer .content {
+    display: inline;
+}
+
+footer a {
+    margin-left: 30px;
+    color: #777;
+}
+
+footer a:visited {
+    color: #777;
+}
+
+footer a:hover {
+    color: #000;
+}

@@ -83,11 +83,11 @@ header {
 header a.logo {
     position: absolute;
     width: 800px;
-    height: 800px;
-    background: url(../WeddingLogoWhite-01.png) no-repeat 0 0;
+    height: 400px;
+    background: url(../logo.png) no-repeat 0 0;
     background-size: contain;
-    z-index: 1;
     left: calc(50% - 400px);
+    z-index: 1;
     top: 30px;
 }
 

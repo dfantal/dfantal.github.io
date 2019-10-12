@@ -82,12 +82,12 @@ header {
 
 header a.logo {
     position: absolute;
-    width: 430px;
-    height: 430px;
-    background: url(../images/logo_inverted.png) no-repeat 0 0;
+    width: 800px;
+    height: 800px;
+    background: url(../WeddingLogoWhite-01.png) no-repeat 0 0;
     background-size: contain;
     z-index: 1;
-    left: calc(50% - 215px);
+    left: calc(50% - 400px);
     top: 30px;
 }
 

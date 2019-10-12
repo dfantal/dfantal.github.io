@@ -73,7 +73,7 @@ a.btn:hover {
 
 header {
     height: 430px;
-    background: #000 url(../images/banner.jpg) no-repeat center top;
+    background: #000 url(../danMiriamGarb.jpg) no-repeat 50% 40%;
     background-size: cover;
     position: relative;
     display: flex;
@@ -151,11 +151,11 @@ section.atmosphere {
 }
 
 section.atmosphere article.img {
-    background: url('../images/brewery.jpg') no-repeat;
+    background: url('../danMiriam.jpg') no-repeat;
     background-size: contain;
-    max-width: 30%;
+    max-width: 40%;
     min-width: 600px;
-    height: 240px;
+    height: 500px;
     flex: 1;
 }
 
